@@ -65,14 +65,17 @@ body, html {
   text-align: center;
 }
 
+
 .bg-image {
-  background-image: url("../src/janev2bg.jpg");
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  background-image: url("../src/janev2bg-blured.png");
   height: 100%;
   width: 100%;
-
-  background-position: center;
+  /* Problema da borda feia resolvido exibindo a imagem já com o efeito de blur nela e removendo o blur no css.
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  transform: scale(1.04);
+  */
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
