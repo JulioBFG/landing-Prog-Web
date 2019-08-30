@@ -60,7 +60,7 @@ body, html {
 .bg-image {
   background-image: url("../src/janev2bg.jpg");
   filter: blur(10px);
-  -webkit-filter: blur(10px);
+  -webkit-filter: blur(4px);
   height: 100%;
   width: 100%;
   transform: scale(1.04);
