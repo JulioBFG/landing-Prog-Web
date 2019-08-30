@@ -6,8 +6,47 @@ body, html {
   box-sizing: border-box;
 }
 
+.bg-image {
+  background-image: url("../src/janev2bg-blured.png");
+  height: 100%;
+  width: 100%;
+  /* Problema da borda feia resolvido exibindo a imagem já com o efeito de blur nela e removendo o blur no css.
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  transform: scale(1.04);
+  */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  font-family: 'Manjari', sans-serif;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 15px;
+  text-align: center;
+}
+
 .img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,12 +64,6 @@ body, html {
 
 .container:nth-child(even) {
   float: left;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .overlay {
@@ -62,37 +95,5 @@ body, html {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-.bg-image {
-  background-image: url("../src/janev2bg-blured.png");
-  height: 100%;
-  width: 100%;
-  /* Problema da borda feia resolvido exibindo a imagem já com o efeito de blur nela e removendo o blur no css.
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  transform: scale(1.04);
-  */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-text {
-  font-family: 'Manjari', sans-serif;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 70%;
-  padding: 15px;
   text-align: center;
 }
